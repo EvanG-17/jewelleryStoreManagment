@@ -3,6 +3,7 @@ package com.example.jewellerystoremanagement1_1.Controllers;
 import com.example.jewellerystoremanagement1_1.JewelleryApplication;
 import com.example.jewellerystoremanagement1_1.Models.DisplayTray;
 import com.example.jewellerystoremanagement1_1.Models.JewelleryItem;
+import com.example.jewellerystoremanagement1_1.Models.MaterialContent;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -154,6 +155,15 @@ public class ItemController {
         }
         Stage s = (Stage) ((Button) actionEvent.getSource()).getScene().getWindow(); // loading already initialized scene from Scene scene = null
         s.setScene(ItemController.itemtoMaterial);
+
+        MaterialContent tempMat11 = ItemController.selectedItem.firstMaterial;
+
+        MaterialController.mc.materials.getItems().clear();
+
+        while (tempMat11 != null) {
+            MaterialController.mc.materials.getItems().add(tempMat11);
+            tempMat11 = tempMat11.nextMaterial;
+        }
     }
 
 

@@ -1,127 +1,87 @@
 <object-stream>
   <com.example.jewellerystoremanagement1__1.Models.DisplayCase>
-    <nextCase>
-      <nextCase>
-        <firstTray>
-          <nextTray>
-            <nextTray>
-              <firstItem>
-                <nextItem>
-                  <nextItem>
-                    <firstMaterial>
-                      <material>Gold</material>
-                      <materialdescription>A fine gold ring</materialdescription>
-                      <weight>100</weight>
-                      <quality>10</quality>
-                    </firstMaterial>
-                    <description>1</description>
-                    <type>1</type>
-                    <gender>1</gender>
-                    <url>1</url>
-                    <price>2</price>
-                  </nextItem>
-                  <description>1</description>
-                  <type>1</type>
-                  <gender>1</gender>
-                  <url>1</url>
-                  <price>2</price>
-                </nextItem>
-                <description>1</description>
-                <type>1</type>
-                <gender>1</gender>
-                <url>1</url>
-                <price>2</price>
-              </firstItem>
-              <id>22</id>
-              <colour>S</colour>
-              <width>2</width>
-              <height>2</height>
-              <dc reference="../../../.."/>
-            </nextTray>
-            <firstItem>
-              <nextItem>
-                <description>1</description>
-                <type>1</type>
-                <gender>1</gender>
-                <url>1</url>
-                <price>2</price>
-              </nextItem>
-              <description>1</description>
-              <type>1</type>
-              <gender>1</gender>
-              <url>1</url>
-              <price>2</price>
-            </firstItem>
-            <id>22</id>
-            <colour>s</colour>
-            <width>2</width>
-            <height>2</height>
-            <dc reference="../../.."/>
-          </nextTray>
+    <firstTray>
+      <nextTray>
+        <nextTray>
           <firstItem>
-            <description>1</description>
-            <type>1</type>
-            <gender>1</gender>
-            <url>1</url>
-            <price>2</price>
+            <nextItem>
+              <nextItem>
+                <firstMaterial>
+                  <nextMaterial>
+                    <material>s</material>
+                    <materialdescription>s</materialdescription>
+                    <weight>2</weight>
+                    <quality>22</quality>
+                  </nextMaterial>
+                  <material>s</material>
+                  <materialdescription>s</materialdescription>
+                  <weight>2</weight>
+                  <quality>22</quality>
+                </firstMaterial>
+                <description>s</description>
+                <type>s</type>
+                <gender>s</gender>
+                <url>s</url>
+                <price>3</price>
+              </nextItem>
+              <description>s</description>
+              <type>s</type>
+              <gender>s</gender>
+              <url>s</url>
+              <price>4</price>
+            </nextItem>
+            <description>s</description>
+            <type>s</type>
+            <gender>s</gender>
+            <url>s</url>
+            <price>5</price>
           </firstItem>
-          <id>22</id>
+          <id>2</id>
           <colour>s</colour>
           <width>2</width>
           <height>2</height>
-          <dc reference="../.."/>
-        </firstTray>
-        <UID>1</UID>
-        <isLit>false</isLit>
-        <isWallMounted>false</isWallMounted>
-      </nextCase>
-      <firstTray>
-        <nextTray>
-          <nextTray>
-            <nextTray>
-              <nextTray>
-                <nextTray>
-                  <id>22</id>
-                  <colour>s</colour>
-                  <width>2</width>
-                  <height>2</height>
-                  <dc reference="../../../../../../.."/>
-                </nextTray>
-                <id>22</id>
-                <colour>s</colour>
-                <width>2</width>
-                <height>2</height>
-                <dc reference="../../../../../.."/>
-              </nextTray>
-              <id>22</id>
-              <colour>s</colour>
-              <width>2</width>
-              <height>2</height>
-              <dc reference="../../../../.."/>
-            </nextTray>
-            <id>22</id>
-            <colour>swqwe</colour>
-            <width>2</width>
-            <height>2</height>
-            <dc reference="../../../.."/>
-          </nextTray>
-          <id>22</id>
-          <colour>swqwe</colour>
-          <width>2</width>
-          <height>2</height>
-          <dc reference="../../.."/>
+          <dc reference="../../../.."/>
         </nextTray>
-        <id>22</id>
-        <colour>swqwe</colour>
+        <firstItem>
+          <nextItem>
+            <nextItem>
+              <firstMaterial>
+                <material>s</material>
+                <materialdescription>s</materialdescription>
+                <weight>2</weight>
+                <quality>22</quality>
+              </firstMaterial>
+              <description>s</description>
+              <type>s</type>
+              <gender>s</gender>
+              <url>s</url>
+              <price>1</price>
+            </nextItem>
+            <description>s</description>
+            <type>s</type>
+            <gender>s</gender>
+            <url>s</url>
+            <price>2</price>
+          </nextItem>
+          <description>s</description>
+          <type>s</type>
+          <gender>s</gender>
+          <url>s</url>
+          <price>3</price>
+        </firstItem>
+        <id>1</id>
+        <colour>s</colour>
         <width>2</width>
         <height>2</height>
-        <dc reference="../.."/>
-      </firstTray>
-      <UID>22</UID>
-      <isLit>false</isLit>
-      <isWallMounted>false</isWallMounted>
-    </nextCase>
-    <UID>223</UID>
+        <dc reference="../../.."/>
+      </nextTray>
+      <id>3</id>
+      <colour>s</colour>
+      <width>2</width>
+      <height>2</height>
+      <dc reference="../.."/>
+    </firstTray>
+    <UID>22</UID>
     <isLit>false</isLit>
     <isWallMounted>false</isWallMounted>
   </com.example.jewellerystoremanagement1__1.Models.DisplayCase>

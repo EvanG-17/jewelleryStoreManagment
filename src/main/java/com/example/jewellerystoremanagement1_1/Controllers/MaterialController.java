@@ -84,7 +84,7 @@ public class MaterialController {
 
         //CLEAR THE LISTVIEW
 
-       materials.getItems().clear();
+        materials.getItems().clear();
 
 
         //adds most recent to list view --- IMPORTANT FOR LIST VIEW as it depends
@@ -95,17 +95,8 @@ public class MaterialController {
         }
 
 
-        JewelleryItem tempItem44 = TrayController.selectedTray.firstItem;
-
-        ItemController.ic.items.getItems().clear();
-
-        while (tempItem44 != null) {
-            ItemController.ic.items.getItems().add(tempItem44);
-            tempItem44 = tempItem44.nextItem;
-        }
-
-
     }
+
 
     //DELETES SELECTED CASE ON LIST VIEW
     public void deleteAppointment(KeyEvent keyEvent) {
@@ -128,6 +119,18 @@ public class MaterialController {
         }
         Stage s = (Stage) ((Button) actionEvent.getSource()).getScene().getWindow(); // loading already initialized scene from Scene scene = null
         s.setScene(MaterialController.materialToItem);
+
+        JewelleryItem tempItem44 = TrayController.selectedTray.firstItem;
+
+        ItemController.ic.items.getItems().clear();
+
+        while (tempItem44 != null) {
+            ItemController.ic.items.getItems().add(tempItem44);
+            tempItem44 = tempItem44.nextItem;
+
+        }
+
+
     }
 
     public void initialize() {

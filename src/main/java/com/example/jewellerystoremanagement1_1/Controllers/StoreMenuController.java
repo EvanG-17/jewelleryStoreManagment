@@ -30,6 +30,7 @@ public class StoreMenuController {
     public Button createTrayButton;
     public static Scene TheScene;
     public static Scene theScene3;
+    public static Scene mainToList;
     public static DisplayCase selectedCase;
     public static DisplayCase firstCase;
     public static DisplayTray selectedTray;
@@ -39,6 +40,7 @@ public class StoreMenuController {
     public Button refreshCases;
     public Button load;
     public Button save;
+    public Button mainListAll;
 
     //method made in lab with peter to open a new scene, get the window and display
 
@@ -92,6 +94,23 @@ public class StoreMenuController {
         }
 
     }
+
+    public void onMainListAll(ActionEvent actionEvent) {
+        Scene scene = null;
+        if (StoreMenuController.mainToList == null) {
+            FXMLLoader fxmlLoader = new FXMLLoader(JewelleryApplication.class.getResource("displayTrayMenu.fxml"));
+
+            try {
+                StoreMenuController.mainToList = new Scene(fxmlLoader.load());
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+        Stage s = (Stage) ((Button) actionEvent.getSource()).getScene().getWindow(); // loading already initialized scene from Scene scene = null
+        s.setScene(StoreMenuController.mainToList);
+    }
+
+
 
 
     //DELETES SELECTED CASE ON LIST VIEW
@@ -203,20 +222,26 @@ public class StoreMenuController {
             tempItem44 = tempItem44.nextItem;
         }
 
-        JewelleryItem tempMat11 = TrayController.selectedTray.firstItem;
+        //Loads all materials
 
-        ItemController.ic.items.getItems().clear();
+        MaterialContent tempMat11 = ItemController.selectedItem.firstMaterial;
+
+        MaterialController.mc.materials.getItems().clear();
 
         while (tempMat11 != null) {
-            ItemController.ic.items.getItems().add(tempMat11);
-            tempMat11 = tempMat11.nextItem;
+            MaterialController.mc.materials.getItems().add(tempMat11);
+            tempMat11 = tempMat11.nextMaterial;
         }
     }
+
+
 
 
     public void initialize() {
         smc = this;
     }
+
+
 }
 
 
