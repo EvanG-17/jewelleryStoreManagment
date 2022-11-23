@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="551.0" prefWidth="815.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.jewellerystoremanagement1_1.Controllers.TrayController">
+   <children>
+      <ListView fx:id="trays" layoutX="11.0" layoutY="100.0" prefHeight="385.0" prefWidth="710.0" onKeyReleased="#deleteAppointment" AnchorPane.bottomAnchor="65.66666666666669" AnchorPane.leftAnchor="11.0" AnchorPane.rightAnchor="9.0" />
+      <TextField fx:id="trayUID" layoutX="60.0" layoutY="14.0" onAction="#addTrayUID" prefHeight="25.0" prefWidth="121.0" />
+<!--      <Text layoutX="186.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Inlay Material" />-->
+<!--      <Text layoutX="36.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="W" />-->
+      <TextField fx:id="widthText" layoutX="60.0" layoutY="45.0" onAction="#addTrayWidth" prefHeight="25.0" prefWidth="121.0" />
+<!--      <Text layoutX="235.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="H" />-->
+      <TextField fx:id="heightText" layoutX="259.0" layoutY="45.0" onAction="#addTrayHeight" />
+      <Button fx:id="addTrayButton" layoutX="438.0" layoutY="26.0" mnemonicParsing="false" onAction="#onAddTray" prefHeight="25.0" prefWidth="149.0" text="Add Tray" />
+      <Button fx:id="backToDisplayCase" layoutX="11.0" layoutY="498.0" mnemonicParsing="false" onAction="#goToDisplayCase" text="Display Case" />
+      <Button fx:id="goToJewelleryItem" layoutX="709.0" layoutY="498.0" mnemonicParsing="false" onAction="#goToJewelleryItem" text="Jewellery Item" />
+      <Label layoutX="23.0" layoutY="18.0" text="UID" />
+      <Label layoutX="27.0" layoutY="49.0" text="W" />
+      <Label layoutX="240.0" layoutY="49.0" text="H" />
+      <TextField fx:id="inlayMaterialColourText" layoutX="259.0" layoutY="14.0" onAction="#addInlayMaterialColour" />
+      <Label layoutX="185.0" layoutY="18.0" text="Inlay Colour" />
+      <Button fx:id="deleteTrays" layoutX="700.0" layoutY="70.0" mnemonicParsing="false" onAction="#onDeleteAllTrays" text="Delete all Trays!" />
+      <Button fx:id="refreshTrays" layoutX="700.0" layoutY="26.0" mnemonicParsing="false" onAction="#onRefreshTrays" text="Refresh" />
+   </children>
+</AnchorPane>

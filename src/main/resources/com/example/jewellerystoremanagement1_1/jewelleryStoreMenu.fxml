@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<FlowPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="551.0" prefWidth="815.0" style="-fx-background-color: #0077b6;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.jewellerystoremanagement1_1.Controllers.StoreMenuController">
+   <Button fx:id="createCaseButton" mnemonicParsing="false" onAction="#onCreateCaseButton" prefHeight="25.0" prefWidth="255.0" style="-fx-background-color: #00B69A;" text="Create Case">
+      <FlowPane.margin>
+         <Insets left="50.0" />
+      </FlowPane.margin>
+   </Button>
+   <ImageView fitHeight="115.0" fitWidth="161.0" pickOnBounds="true" preserveRatio="true">
+      <FlowPane.margin>
+         <Insets left="28.0" top="10.0" />
+      </FlowPane.margin>
+      <Image url="file:/C:/Users/etg17/IdeaProjects/jewelleryStoreManagment/src/main/resources/com/example/jewellerystoremanagment/logo.png" />
+   </ImageView>
+   <AnchorPane prefHeight="34.0" prefWidth="815.0">
+      <Label layoutX="50.0" layoutY="9.0" prefHeight="17.0" prefWidth="24.0" text="UID" />
+      <Label layoutX="86.0" layoutY="9.0" text="Wallmounted" />
+      <Label layoutX="170.0" layoutY="9.0" text="Lit" />
+      <Button fx:id="deleteCases" layoutX="656.0" layoutY="4.0" mnemonicParsing="false" onAction="#onDeleteAllCases" text="Delete all Cases!" />
+      <Button fx:id="resetStock" layoutX="389.0" layoutY="3.0" mnemonicParsing="false" onAction="#onResetAllStock" style="-fx-background-color: #ff595e;" text="Reset All Stock!" />
+      <Button fx:id="refreshCases" layoutX="565.0" layoutY="4.0" mnemonicParsing="false" onAction="#onRefreshCases" text="Refresh" />
+   </AnchorPane>
+   <ListView fx:id="cases" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onKeyReleased="#deleteAppointment" onMouseClicked="#selectTray" prefHeight="385.0" prefWidth="710.0" style="-fx-font-size: 1.5em ;">
+      <FlowPane.margin>
+         <Insets bottom="10.0" left="50.0" top="2.0" />
+      </FlowPane.margin>
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+      <effect>
+         <InnerShadow>
+            <input>
+               <SepiaTone />
+            </input>
+         </InnerShadow>
+      </effect>
+   </ListView>
+   <Button fx:id="save" mnemonicParsing="false" onAction="#onSave" text="Save">
+      <FlowPane.margin>
+         <Insets left="50.0" />
+      </FlowPane.margin></Button>
+   <Button fx:id="load" mnemonicParsing="false" onAction="#onLoad" text="Load" />
+   <Button fx:id="createTrayButton" mnemonicParsing="false" onAction="#onCreateTrayButton" prefHeight="25.0" prefWidth="253.0" style="-fx-background-color: #00B69A;" text="Create Tray">
+      <FlowPane.margin>
+         <Insets left="373.0" />
+      </FlowPane.margin>
+      <opaqueInsets>
+         <Insets />
+      </opaqueInsets>
+   </Button>
+</FlowPane>
