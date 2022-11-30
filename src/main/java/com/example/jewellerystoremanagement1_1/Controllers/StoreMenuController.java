@@ -5,6 +5,7 @@ import com.example.jewellerystoremanagement1_1.Models.DisplayCase;
 import com.example.jewellerystoremanagement1_1.Models.DisplayTray;
 import com.example.jewellerystoremanagement1_1.Models.JewelleryItem;
 import com.example.jewellerystoremanagement1_1.Models.MaterialContent;
+import com.example.jewellerystoremanagement1_1.Controllers.ItemController;
 import com.thoughtworks.xstream.XStream;
 import com.thoughtworks.xstream.io.xml.DomDriver;
 import javafx.event.ActionEvent;
@@ -12,6 +13,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.ListView;
+import javafx.scene.control.TextField;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
@@ -41,6 +43,10 @@ public class StoreMenuController {
     public Button load;
     public Button save;
     public Button mainListAll;
+    public ListView searchList;
+    public TextField search;
+    public Button searchButton;
+    public Button totalPrice;
 
     //method made in lab with peter to open a new scene, get the window and display
 
@@ -95,10 +101,11 @@ public class StoreMenuController {
 
     }
 
+    // Opens list all menu
     public void onMainListAll(ActionEvent actionEvent) {
         Scene scene = null;
         if (StoreMenuController.mainToList == null) {
-            FXMLLoader fxmlLoader = new FXMLLoader(JewelleryApplication.class.getResource("displayTrayMenu.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(JewelleryApplication.class.getResource("treeViewScene.fxml"));
 
             try {
                 StoreMenuController.mainToList = new Scene(fxmlLoader.load());
@@ -163,7 +170,7 @@ public class StoreMenuController {
         }
     }
 
-
+    //Save method using XStream
     public void onSave() throws Exception {
         System.out.println("\nSaving...\n===========================");
         XStream xstream = new XStream(new DomDriver());
@@ -175,6 +182,7 @@ public class StoreMenuController {
         System.out.println("\n===========================\nSaved!");
     }
 
+    //Load method using XStream
     public void onLoad() throws Exception {
 
         System.out.println("\nLoading...\n===========================");
@@ -236,12 +244,56 @@ public class StoreMenuController {
 
 
 
+    //Using same method as List All Stock with drill down through cases,trays the items
+    public void onSearchJewellery(ActionEvent actionEvent) {
+
+        System.out.println("Searching.....");
+        System.out.println("\n" + "Searched for: " + search.getText());
+
+        DisplayCase tempDC = JewelleryApplication.firstCase;
+        while (tempDC != null) {
+            DisplayTray tempDT = tempDC.firstTray;
+            while (tempDT != null){
+                JewelleryItem tempJT = tempDT.firstItem;
+                while (tempJT != null){
+                    if (tempJT.getDescription().contains(search.getText()))
+                        searchList.getItems().add(String.valueOf(tempJT));
+                    tempJT = tempJT.nextItem;
+                }
+                tempDT= tempDT.nextTray;
+            }
+            tempDC= tempDC.nextCase;
+        }
+
+        System.out.println("\n" + "Found the following search results: ");
+        System.out.println( "\n" + searchList.getItems());
+    }
+
+
+
 
     public void initialize() {
         smc = this;
     }
 
-
+    //Calculates total price of jewellery items
+    public void onTotalPrice(ActionEvent actionEvent) {
+        DisplayCase tempDC = JewelleryApplication.firstCase;
+        while (tempDC != null) {
+            //ADD DC - Display Case
+            DisplayTray tempDT = tempDC.firstTray;
+            while (tempDT != null) {
+                //ADD DT - Display Tray
+                JewelleryItem tempJT = tempDT.firstItem;
+                while (tempJT != null) {
+                    //Add list to list view ADD JT - Jewellery Item
+                    tempJT = tempJT.nextItem;
+                }
+                tempDT = tempDT.nextTray;
+            }
+            tempDC = tempDC.nextCase;
+        }
+    }
 }
 
 

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="551.0" prefWidth="815.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.jewellerystoremanagement1_1.Controllers.TreeViewController">
+   <children>
+      <Button fx:id="ListToMain" layoutX="49.0" layoutY="504.0" mnemonicParsing="false" onAction="#onListToMain" text="Main Menu" />
+      <ListView fx:id="listViewAll" layoutX="26.0" layoutY="73.0" prefHeight="401.0" prefWidth="763.0" />
+      <Button fx:id="listAllStock" layoutX="262.0" layoutY="25.0" mnemonicParsing="false" onAction="#onListAllStock" prefHeight="25.0" prefWidth="285.0" text="List All Stock" />
+   </children>
+</AnchorPane>

@@ -78,7 +78,9 @@ public class MaterialContent {
                 "Material Content:  " + material +
                         "   Material Description:  " + materialdescription +
                         "   Material Weight:  " + weight +
-                        "   Material Quality:  " + quality;
+                        "g" +
+                        "   Material Quality:  " + quality
+                        + " /10";
 
     }
 

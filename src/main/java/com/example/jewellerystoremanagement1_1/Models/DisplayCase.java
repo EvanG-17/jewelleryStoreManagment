@@ -2,6 +2,7 @@ package com.example.jewellerystoremanagement1_1.Models;
 
 public class DisplayCase {
 
+
     public DisplayCase nextCase;
     public DisplayTray firstTray;
     public DisplayCase getNextCase = null;

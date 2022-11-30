@@ -106,6 +106,7 @@ public class MaterialController {
                     .getSelectedIndex());
     }
 
+    //Go from Material screen back to jewellery
     public void goMaterialToJewellery(ActionEvent actionEvent) {
         Scene scene = null;
         if (MaterialController.materialToItem == null) {

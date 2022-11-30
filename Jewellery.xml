@@ -1,87 +1,222 @@
 <object-stream>
   <com.example.jewellerystoremanagement1__1.Models.DisplayCase>
-    <firstTray>
-      <nextTray>
-        <nextTray>
-          <firstItem>
-            <nextItem>
+    <nextCase>
+      <nextCase>
+        <firstTray>
+          <nextTray>
+            <nextTray>
+              <firstItem>
+                <nextItem>
+                  <nextItem>
+                    <nextItem>
+                      <firstMaterial>
+                        <nextMaterial>
+                          <nextMaterial>
+                            <material>s</material>
+                            <materialdescription>s</materialdescription>
+                            <weight>2</weight>
+                            <quality>22</quality>
+                          </nextMaterial>
+                          <material>s</material>
+                          <materialdescription>s</materialdescription>
+                          <weight>2</weight>
+                          <quality>22</quality>
+                        </nextMaterial>
+                        <material>ring</material>
+                        <materialdescription>Gold</materialdescription>
+                        <weight>100</weight>
+                        <quality>1</quality>
+                      </firstMaterial>
+                      <description>s</description>
+                      <type>s</type>
+                      <gender>s</gender>
+                      <url>s</url>
+                      <price>3</price>
+                    </nextItem>
+                    <description>s</description>
+                    <type>s</type>
+                    <gender>s</gender>
+                    <url>s</url>
+                    <price>4</price>
+                  </nextItem>
+                  <description>s</description>
+                  <type>s</type>
+                  <gender>s</gender>
+                  <url>s</url>
+                  <price>5</price>
+                </nextItem>
+                <description>ring</description>
+                <type>ring</type>
+                <gender>male</gender>
+                <url>yes</url>
+                <price>20</price>
+              </firstItem>
+              <id>2</id>
+              <colour>s</colour>
+              <width>2</width>
+              <height>2</height>
+              <dc reference="../../../.."/>
+            </nextTray>
+            <firstItem>
               <nextItem>
-                <firstMaterial>
-                  <nextMaterial>
+                <nextItem>
+                  <firstMaterial>
                     <material>s</material>
                     <materialdescription>s</materialdescription>
                     <weight>2</weight>
                     <quality>22</quality>
-                  </nextMaterial>
-                  <material>s</material>
-                  <materialdescription>s</materialdescription>
-                  <weight>2</weight>
-                  <quality>22</quality>
-                </firstMaterial>
+                  </firstMaterial>
+                  <description>s</description>
+                  <type>s</type>
+                  <gender>s</gender>
+                  <url>s</url>
+                  <price>1</price>
+                </nextItem>
                 <description>s</description>
                 <type>s</type>
                 <gender>s</gender>
                 <url>s</url>
-                <price>3</price>
+                <price>2</price>
               </nextItem>
               <description>s</description>
               <type>s</type>
               <gender>s</gender>
               <url>s</url>
-              <price>4</price>
-            </nextItem>
-            <description>s</description>
-            <type>s</type>
-            <gender>s</gender>
-            <url>s</url>
-            <price>5</price>
-          </firstItem>
-          <id>2</id>
+              <price>3</price>
+            </firstItem>
+            <id>1</id>
+            <colour>s</colour>
+            <width>2</width>
+            <height>2</height>
+            <dc reference="../../.."/>
+          </nextTray>
+          <id>3</id>
           <colour>s</colour>
           <width>2</width>
           <height>2</height>
-          <dc reference="../../../.."/>
+          <dc reference="../.."/>
+        </firstTray>
+        <UID>22</UID>
+        <isLit>false</isLit>
+        <isWallMounted>false</isWallMounted>
+      </nextCase>
+      <firstTray>
+        <nextTray>
+          <firstItem>
+            <nextItem>
+              <nextItem>
+                <nextItem>
+                  <description>GOld ring</description>
+                  <type>ring</type>
+                  <gender>male</gender>
+                  <url>https://bob.com</url>
+                  <price>200</price>
+                </nextItem>
+                <description>GOld ring</description>
+                <type>ring</type>
+                <gender>male</gender>
+                <url>https://bob.com</url>
+                <price>200</price>
+              </nextItem>
+              <description>GOld ring</description>
+              <type>ring</type>
+              <gender>male</gender>
+              <url>https://bob.com</url>
+              <price>200</price>
+            </nextItem>
+            <description>GOld ring</description>
+            <type>ring</type>
+            <gender>male</gender>
+            <url>https://bob.com</url>
+            <price>200</price>
+          </firstItem>
+          <id>232</id>
+          <colour>Green</colour>
+          <width>23</width>
+          <height>23</height>
+          <dc reference="../../.."/>
         </nextTray>
         <firstItem>
           <nextItem>
-            <nextItem>
-              <firstMaterial>
-                <material>s</material>
-                <materialdescription>s</materialdescription>
-                <weight>2</weight>
-                <quality>22</quality>
-              </firstMaterial>
-              <description>s</description>
-              <type>s</type>
-              <gender>s</gender>
-              <url>s</url>
-              <price>1</price>
-            </nextItem>
-            <description>s</description>
-            <type>s</type>
-            <gender>s</gender>
-            <url>s</url>
-            <price>2</price>
+            <description>Black necklace</description>
+            <type>Necklace</type>
+            <gender>Female</gender>
+            <url>https://necklace.com</url>
+            <price>200</price>
           </nextItem>
-          <description>s</description>
-          <type>s</type>
-          <gender>s</gender>
-          <url>s</url>
-          <price>3</price>
+          <description>White</description>
+          <type>Ring</type>
+          <gender>Female</gender>
+          <url>https://necklace.com</url>
+          <price>250</price>
         </firstItem>
-        <id>1</id>
-        <colour>s</colour>
-        <width>2</width>
-        <height>2</height>
+        <id>232</id>
+        <colour>Green</colour>
+        <width>23</width>
+        <height>23</height>
+        <dc reference="../.."/>
+      </firstTray>
+      <UID>223</UID>
+      <isLit>false</isLit>
+      <isWallMounted>false</isWallMounted>
+    </nextCase>
+    <firstTray>
+      <nextTray>
+        <nextTray>
+          <firstItem>
+            <nextItem>
+              <description>Blue</description>
+              <type>Ring</type>
+              <gender>male</gender>
+              <url>male</url>
+              <price>1000</price>
+            </nextItem>
+            <description>Green</description>
+            <type>Ring</type>
+            <gender>male</gender>
+            <url>male</url>
+            <price>1000</price>
+          </firstItem>
+          <id>1</id>
+          <colour>Yellow</colour>
+          <width>12</width>
+          <height>123</height>
+          <dc reference="../../../.."/>
+        </nextTray>
+        <id>2</id>
+        <colour>Yellow</colour>
+        <width>12</width>
+        <height>123</height>
         <dc reference="../../.."/>
       </nextTray>
+      <firstItem>
+        <nextItem>
+          <nextItem>
+            <description>Green</description>
+            <type>Ring</type>
+            <gender>male</gender>
+            <url>male</url>
+            <price>1000</price>
+          </nextItem>
+          <description>Green</description>
+          <type>Ring</type>
+          <gender>male</gender>
+          <url>male</url>
+          <price>1000</price>
+        </nextItem>
+        <description>Yellow</description>
+        <type>Ring</type>
+        <gender>male</gender>
+        <url>male</url>
+        <price>1000</price>
+      </firstItem>
       <id>3</id>
-      <colour>s</colour>
-      <width>2</width>
-      <height>2</height>
+      <colour>Yellow</colour>
+      <width>12</width>
+      <height>123</height>
       <dc reference="../.."/>
     </firstTray>
-    <UID>22</UID>
+    <UID>1</UID>
     <isLit>false</isLit>
     <isWallMounted>false</isWallMounted>
   </com.example.jewellerystoremanagement1__1.Models.DisplayCase>

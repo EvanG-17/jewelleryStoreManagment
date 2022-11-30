@@ -79,6 +79,8 @@ public class ItemController {
     }
 
 
+
+
     public void onAddJewelleryItem(ActionEvent actionEvent) {
 
         addNewJewelleryItem(TrayController.selectedTray, addJewelleryDescription(), addJewelleryType(), addJewelleryGender(), addJewelleryImage(), addJewelleryPrice());
@@ -178,6 +180,10 @@ public class ItemController {
             ItemController.ic.items.getItems().add(tempItem4);
             tempItem4 = tempItem4.nextItem;
         }
+    }
+
+    public TextField getJewelleryDescription() {
+        return jewelleryDescription;
     }
 
     public void initialize() {

@@ -90,28 +90,6 @@ public class CaseController {
 
 
 
-//        public static void addNewDisplayCase(int UID, boolean wallMounted, boolean lit) {
-//        DisplayCase dc = new DisplayCase();
-//        dc.setUID(UID);
-//        dc.setWallMounted(wallMounted);
-//        dc.setLit(lit);
-//
-//
-//
-//
-//            dc.nextCase = firstCase;
-//            firstCase = dc;
-//
-//
-//            DisplayCase temp = firstCase;
-//            while (temp != null) {
-//                System.out.println(temp.getUID());   // displays uid's in console to test for working
-//
-//                temp = temp.getNextCase();
-
-
-
-
 
 
 

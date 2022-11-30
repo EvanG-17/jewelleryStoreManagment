@@ -14,6 +14,8 @@ public class DisplayTray {
     private DisplayCase dc;
 
 
+
+
     public DisplayTray getNextTray() {
         return nextTray;
     }
@@ -99,7 +101,16 @@ public class DisplayTray {
                 "   Display Tray Height:  " + height;
     }
 
+    public DisplayTray(int id, String colour, int width, int height) {
+        this.id = id;
+        this.colour = colour;
+        this.width = width;
+        this.height = height;
+    }
+
     public void setDisplayCase(DisplayCase dc) {
         this.dc = dc;
     }
+
+    public DisplayTray(){}
 }

@@ -2,10 +2,11 @@
 
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="551.0" prefWidth="815.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.jewellerystoremanagement1_1.Controllers.MaterialController">
    <children>
-      <ListView fx:id="materials" layoutX="10.0" layoutY="172.0" prefHeight="207.0" prefWidth="795.0" onKeyReleased="#deleteAppointment" AnchorPane.bottomAnchor="171.66666666666663" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" />
+      <ListView fx:id="materials" layoutX="10.0" layoutY="172.0" onKeyReleased="#deleteAppointment" prefHeight="207.0" prefWidth="795.0" AnchorPane.bottomAnchor="171.66666666666663" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" />
       <TextField fx:id="materialName" layoutX="258.0" layoutY="25.0" onAction="#addMaterialName" />
       <TextField fx:id="materialDescription" layoutX="14.0" layoutY="25.0" onAction="#addMaterialDescription" prefHeight="117.0" prefWidth="149.0" />
       <TextField fx:id="materialWeight" layoutX="258.0" layoutY="114.0" onAction="#addMaterialWeight" />
@@ -16,5 +17,6 @@
       <Label layoutX="456.0" layoutY="29.0" text="Quality" />
       <Button fx:id="addMaterial" layoutX="495.0" layoutY="114.0" mnemonicParsing="false" onAction="#onAddMaterial" prefHeight="25.0" prefWidth="149.0" text="Add Material" />
       <Button fx:id="materialToJewellery" layoutX="10.0" layoutY="512.0" mnemonicParsing="false" onAction="#goMaterialToJewellery" text="Jewellery Item" />
+      <Text layoutX="644.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="/10" />
    </children>
 </AnchorPane>

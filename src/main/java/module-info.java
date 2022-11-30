@@ -2,6 +2,7 @@ module com.example.jewellerystoremanagement1_1 {
     requires javafx.controls;
     requires javafx.fxml;
     requires xstream;
+    requires org.junit.jupiter.api;
 
 
     opens com.example.jewellerystoremanagement1_1 to javafx.fxml,xstream;
